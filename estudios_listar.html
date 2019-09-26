@@ -22,6 +22,9 @@
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
 
+        <!-- Page level plugin CSS-->
+ <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -97,7 +100,7 @@
                             <a href="estudios_antibiogramas.html">Antibiogramas</a>
                         </li>
                         <li>
-                            <a href="estudios_listar.html">Antibióticos</a>
+                            <a href="estudios_antibiticos.html">Antibióticos</a>
                         </li>
                     </ul>
                 </li>
@@ -184,29 +187,6 @@
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#homeSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-question-circle"></i>
-                        Ayuda
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu8">
-                        <li>
-                            <a href="herramientas_participaciones.html">BeMedica Support</a>
-                        </li>
-                        <li>
-                            <a href="herramientas_corte.html">Registro Demos</a>
-                        </li>
-                        <li>
-                            <a href="herramientas_notificaciones.html">Acerca de</a>
-                        </li>
-                        <li>
-                            <a href="herramientas_reportes.html">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="herramientas_sistema.html">Registros</a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
 
         </nav>
@@ -223,110 +203,102 @@
         <div id="content">
             <div class="accordion" id="accordionExample">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0" style="font-size: 20px;">
-                            Listar estudios, productos y servicios
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                <i class="fas fa-angle-double-down"></i>
-                                <i class="fas fa-angle-double-up"></i>
-                            </button>
-                            <button class="btn btn-link" type="button" aria-expanded="true">
-                                <i class="fas fa-save"></i>
-                            </button>
-                            <button class="btn btn-link" type="button" aria-expanded="true">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </h2>
-                    </div>
+                  <div class="card-header" id="headingOne">
+                      <h2 class="mb-0 form-row" style="font-size: 20px;">
+                          Listar Estudios, Productos y Servicios
+                          <div class="ml-auto">
+                              </button>
+                          </div>
+                      </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    <!--Inicia código de formulario-->
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <!--Inicia código de formulario-->
-                            <form>
-                                <div class="form-row mb-0">
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">ID Estudio</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-6">
-                                        <label class="col-form-label-sm mb-0">Estudio</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
+                    <div class="col-sm-12">
+                      <div class="card mb-3">
+
+                        <div class="card-header">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                <thead>
+                                  <tr class="table-primary">
+                                    <th>Id</th>
+                                    <th>Nombre</th>
+                                    <th>Nombre Impresion</th>
+                                    <th>Catalogo</th>
+                                    <th>Visible</th>
+                                    <th>Modificado</th>
+                                    <th>Modifico</th>
+                                    <th width="25%">&nbsp;</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><input class="right" type="checkbox" </td>
+                                    <td></td>
+                                    <td></td>
+
+                                    <td>
+                                      <a class="btn btn-warning btn-sm" href=""><img
+                                        src="">
+                                        Editar</a>
+                                        <a class="btn btn-danger btn-sm" href=""><img
+                                          src="">
+                                          Borrar</a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+
+                                  </table>
+
                                 </div>
-                                <div class="input-group mb-0 form-control-sm">
-                                    <div class="input-group-prepend mb-0">
-                                        <span class="input-group-text">Nombre Completo</span>
-                                    </div>
-                                    <input type="text" aria-label="First name" class="form-control"
-                                        placeholder="Apellido Paterno">
-                                    <input type="text" aria-label="Last name" class="form-control"
-                                        placeholder="Apellido Materno">
-                                    <input type="text" aria-label="First name" class="form-control"
-                                        placeholder="Nombre(s)">
+                              </div>
+
+                            </div>
+                            <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog modal-sm" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <label>Area Proceso</label>
+                                    <input type="text" name="" id="nombre" class="form-control input-sm">
+
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
+                                      Agregar
+                                    </button>
+
+                                  </div>
                                 </div>
-                                <div class="input-group">
-                                    <div class="form-group col-md-3">
-                                        <label for="inputFecha_nac" class="col-form-label-sm mb-0">Fecha de
-                                            nacimiento</label>
-                                        <input type="date" class="form-control form-control-sm" id="inputFecha_nac">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputRFC" class="col-form-label-sm mb-0">RFC</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputRFC">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Sexo</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Masculino</option>
-                                            <option>Femenino</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputEmail" class="col-form-label-sm mb-0">Correo
-                                            electrónico</label>
-                                        <input type="email" class="form-control form-control-sm" id="inputEmail">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-3">
-                                        <label for="inputTel" class="col-form-label-sm mb-0">Teléfono Casa</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputTel">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputCel" class="col-form-label-sm mb-0">Celular</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputCel">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputDireccion" class="col-form-label-sm mb-0">Dirección</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputDireccion">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputCP" class="col-form-label-sm mb-0">Código Postal</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputCP">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label for="inputCol" class="col-form-label-sm mb-0">Colonia</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputCol">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputMun" class="col-form-label-sm mb-0">Municipio</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputMun">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputEstado" class="col-form-label-sm mb-0">Estado</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputEstado">
-                                    </div>
-                                </div>
-                            </form>
-                            <!--Termina código de formulario-->
+                              </div>
+                            </div>
+                            <br><br>
+                            <div align="right">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
+                              Agregar nuevo
+                              <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                          </div>
+                          </div>
+                          <!--Termina código de formulario-->
+
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-    </div>
+              </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -340,6 +312,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
