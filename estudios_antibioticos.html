@@ -205,7 +205,10 @@
                 <div class="card">
                   <div class="card-header" id="headingOne">
                       <h2 class="mb-0 form-row" style="font-size: 20px;">
-                          Buscar Orden
+                          Antibióticos
+                          <div class="ml-auto">
+                              </button>
+                          </div>
                       </h2>
                   </div>
                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
@@ -222,45 +225,21 @@
                               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                   <tr class="table-primary">
-                                    <th width="15%">&nbsp;</th>
-                                    <th>Folio</th>
-                                    <th>Nombre Paciente</th>
-                                    <th>Fecha</th>
-                                    <th>% Avance</th>
-                                    <th>Factura</th>
-                                    <th>Adeudo</th>
-                                    <th>Registró</th>
-                                    <th>Nombre Médico</th>
-                                    <th>Empresa</th>
+                                    <th>Antibiótico</th>
+                                    <th width="25%">&nbsp;</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
+                                    <td>Hematología</td>
                                     <td>
-                                        <a class="btn btn-outline-primary btn-sm" title="Imprimir Orden"
-                                            href=""><i class="fas fa-print"></i></a>
-                                        <a class="btn btn-outline-success btn-sm" title="Confirmar Pedido"
-                                            href=""><i class="fas fa-check-square"></i></a>
-                                        <a class="btn btn-outline-warning btn-sm" title="Abrir Orden" href=""><i
-                                                class="fas fa-folder-open"></i></a>
-                                        <a class="btn btn-outline-danger btn-sm" title="Cancelar Orden"
-                                            href=""><i class="fas fa-trash-alt"></i></a>
-                                        <a class="btn btn-outline-success btn-sm" title="Reutilizar Orden"
-                                            href=""><i class="fas fa-recycle"></i></a>
-                                        <a class="btn btn-outline-info btn-sm" title="Estudio Solicitado:"
-                                            href=""><i class="fas fa-question"></i></a>
-                                        <a class="btn btn-outline-secondary btn-sm" title="Facturación"
-                                            href=""><i class="fas fa-file-alt"></i></a>
-                                    </td>
-                                    <td>16311111</td>
-                                    <td>Claudisa</td>
-                                    <td>2019-02-03</td>
-                                    <td>50</td>
-                                    <td> </td>
-                                    <td>$20</td>
-                                    <td>Demmo</td>
-                                    <td> </td>
-                                    <td>H</td>
+                                      <a class="btn btn-warning btn-sm" href=""><img
+                                        src="">
+                                        Editar</a>
+                                        <a class="btn btn-danger btn-sm" href=""><img
+                                          src="">
+                                          Borrar</a>
+                                        </td>
                                       </tr>
                                     </tbody>
 
@@ -271,15 +250,15 @@
 
                             </div>
                             <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                              <div class="modal-dialog modal-sm-1" role="document">
+                              <div class="modal-dialog modal-sm" role="document">
                                 <div class="modal-content">
                                   <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
+                                      <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
+                                  </div>
                                   <div class="modal-body">
-                                    <label>Nombre de Técnica de Estudio</label>
-                                    <input type="text" name="" id="tecnica" class="form-control input-sm">
+                                    <label>Antibiótico</label>
+                                    <input type="text" name="" id="nombre" class="form-control input-sm">
 
                                   </div>
                                   <div class="modal-footer">
@@ -300,6 +279,7 @@
                           </div>
                           </div>
                           <!--Termina código de formulario-->
+
                         </div>
                       </div>
                     </div>
