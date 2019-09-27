@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link rel="shortcut icon" href="/img/favicon.ico">
     <title>Bemédica Punto de venta</title>
 
     <!-- Bootstrap CSS CDN -->
@@ -21,9 +21,6 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
-
-        <!-- Page level plugin CSS-->
- <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
 </head>
 
@@ -187,6 +184,29 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <a href="#homeSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-question-circle"></i>
+                        Ayuda
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu8">
+                        <li>
+                            <a href="herramientas_participaciones.html">BeMedica Support</a>
+                        </li>
+                        <li>
+                            <a href="herramientas_corte.html">Registro Demos</a>
+                        </li>
+                        <li>
+                            <a href="herramientas_notificaciones.html">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="herramientas_reportes.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="herramientas_sistema.html">Registros</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
         </nav>
@@ -201,112 +221,164 @@
         -->
         <!-- Page Content  -->
         <div id="content">
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample" style="user-select:none;">
                 <div class="card">
-                  <div class="card-header" id="headingOne">
-                      <h2 class="mb-0 form-row" style="font-size: 20px;">
-                          Buscar Orden
-                      </h2>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                  data-parent="#accordionExample">
-                  <div class="card-body">
-                    <!--Inicia código de formulario-->
-
-                    <div class="col-sm-12">
-                      <div class="card mb-3">
-
-                        <div class="card-header">
-                          <div class="card-body">
-                            <div class="table-responsive">
-                              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                  <tr class="table-primary">
-                                    <th width="25%">&nbsp;</th>
-                                    <th>Folio</th>
-                                    <th>Nombre Paciente</th>
-                                    <th>Fecha</th>
-                                    <th>% Avance</th>
-                                    <th>Factura</th>
-                                    <th>Adeudo</th>
-                                    <th>Registró</th>
-                                    <th>Nombre Médico</th>
-                                    <th>Empresa</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>
-                                        <a class="btn btn-outline-primary btn-sm" title="Imprimir Orden"
-                                            href=""><i class="fas fa-print"></i></a>
-                                        <a class="btn btn-outline-success btn-sm" title="Confirmar Pedido"
-                                            href=""><i class="fas fa-check-square"></i></a>
-                                        <a class="btn btn-outline-warning btn-sm" title="Abrir Orden" href=""><i
-                                                class="fas fa-folder-open"></i></a>
-                                        <a class="btn btn-outline-danger btn-sm" title="Cancelar Orden"
-                                            href=""><i class="fas fa-trash-alt"></i></a>
-                                        <a class="btn btn-outline-success btn-sm" title="Reutilizar Orden"
-                                            href=""><i class="fas fa-recycle"></i></a>
-                                        <a class="btn btn-outline-info btn-sm" title="Estudio Solicitado:"
-                                            href=""><i class="fas fa-question"></i></a>
-                                        <a class="btn btn-outline-secondary btn-sm" title="Facturación"
-                                            href=""><i class="fas fa-file-alt"></i></a>
-                                    </td>
-                                    <td>16311111</td>
-                                    <td>Claudisa</td>
-                                    <td>2019-02-03</td>
-                                    <td>50</td>
-                                    <td> </td>
-                                    <td>$20</td>
-                                    <td>Demo</td>
-                                    <td> </td>
-                                    <td>H</td>
-                                      </tr>
-                                    </tbody>
-
-                                  </table>
-
-                                </div>
-                              </div>
-
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0 form-row" style="font-size: 20px;">
+                            Buscar Orden
+                            <div class="ml-auto">
+                                <button class="btn btn-link" type="button" aria-expanded="true" title="Buscar Orden">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                                <button class="btn btn-link" type="button" aria-expanded="true" title="">
+                                    <i class="fas fa-file"></i>
+                                </button>
                             </div>
-                            <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                              <div class="modal-dialog modal-sm-1" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                  <div class="modal-body">
-                                    <label>Nombre de Técnica de Estudio</label>
-                                    <input type="text" name="" id="tecnica" class="form-control input-sm">
-
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
-                                      Agregar
-                                    </button>
-
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <br><br>
-                            <div align="right">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                              Agregar nuevo
-                              <span class="glyphicon glyphicon-plus"></span>
-                            </button>
-                          </div>
-                          </div>
-                          <!--Termina código de formulario-->
-                        </div>
-                      </div>
+                        </h2>
                     </div>
-                  </div>
-                </div>
-              </div>
 
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!--Inicia código de formulario-->
+                            <form>
+                                <div class="form-row mb-0">
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label-sm mb-0">Folio de la Orden</label>
+                                        <input type="text" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label-sm mb-0">Buscar Desde</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label-sm mb-0">Buscar Hasta</label>
+                                        <input type="date" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label class="col-form-label-sm mb-0">Estatus del Procesamiento</label>
+                                        <select id="inputSexo" class="form-control form-control-sm">
+                                            <option>En proceso</option>
+                                            <option>Terminado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputRFC" class="col-form-label-sm mb-0">ID Paciente</label>
+                                        <input type="text" class="form-control form-control-sm" id="inputRFC">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputRFC" class="col-form-label-sm mb-0">Nombre del Paciente</label>
+                                        <input type="text" class="form-control form-control-sm" id="inputRFC">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputSexo" class="col-form-label-sm mb-0">Status del Pago</label>
+                                        <select id="inputSexo" class="form-control form-control-sm">
+                                            <option>En proceso</option>
+                                            <option>Terminado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputTel" class="col-form-label-sm mb-0">ID Médico</label>
+                                        <input type="text" class="form-control form-control-sm" id="inputTel">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputCel" class="col-form-label-sm mb-0">Nombre del Médico</label>
+                                        <input type="text" class="form-control form-control-sm" id="inputCel">
+                                    </div>
+                                    <div class="form-check col-md-4" style="text-align:center; position: relative;">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
+                                            style="top: 20px;">
+                                        <label class="form-check-label" for="defaultCheck1" style="top: 20px;">
+                                            Cotizaciones
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputTel" class="col-form-label-sm mb-0">RFC Empresa</label>
+                                        <input type="text" class="form-control form-control-sm" id="inputTel">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputCel" class="col-form-label-sm mb-0">Nombre de la
+                                            Empresa</label>
+                                        <input type="text" class="form-control form-control-sm" id="inputCel">
+                                    </div>
+                                    <div class="form-check col-md-4" style="text-align:center; position: relative;">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"
+                                            style="top: 20px;">
+                                        <label class="form-check-label" for="defaultCheck1" style="top: 20px;">
+                                            Urgencias
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--Termina código de formulario-->
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0" style="font-size: 20px;">
+                                    Órdenes Encontradas
+                                </h2>
+                            </div>
+                            <div class="col-sm-12">
+                                <table class="table table-sm table-bordered table-striped table-hover">
+                                    <thead>
+                                        <tr class="table-primary">
+                                            <th></th>
+                                            <th>Folio</th>
+                                            <th>Nombre del Paciente</th>
+                                            <th>Fecha</th>
+                                            <th>%Avance</th>
+                                            <th>Factura</th>
+                                            <th>Adeudo</th>
+                                            <th>Registró</th>
+                                            <th>Nombre Médico</th>
+                                            <th>Empresa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a class="btn btn-outline-primary btn-sm" title="Imprimir Orden"
+                                                    href=""><i class="fas fa-print"></i></a>
+                                                <a class="btn btn-outline-success btn-sm" title="Confirmar Pedido"
+                                                    href=""><i class="fas fa-check-square"></i></a>
+                                                <a class="btn btn-outline-warning btn-sm" title="Abrir Orden" href=""><i
+                                                        class="fas fa-folder-open"></i></a>
+                                                <a class="btn btn-outline-danger btn-sm" title="Cancelar Orden"
+                                                    href=""><i class="fas fa-trash-alt"></i></a>
+                                                <a class="btn btn-outline-success btn-sm" title="Reutilizar Orden"
+                                                    href=""><i class="fas fa-recycle"></i></a>
+                                                <a class="btn btn-outline-info btn-sm" title="Estudio Solicitado:"
+                                                    href=""><i class="fas fa-question"></i></a>
+                                                <a class="btn btn-outline-secondary btn-sm" title="Facturación"
+                                                    href=""><i class="fas fa-file-alt"></i></a>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 5%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -323,13 +395,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
-  <!-- Demo scripts for this page-->
-  <script src="js/demo/datatables-demo.js"></script>
-
-  <!-- Page level plugin JavaScript-->
-  <script src="vendor/datatables/jquery.dataTables.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
