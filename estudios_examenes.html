@@ -22,9 +22,6 @@
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
 
-        <!-- Page level plugin CSS-->
- <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -97,7 +94,7 @@
                             <a href="estudios_cultivos.html">Cultivos</a>
                         </li>
                         <li>
-                          <a href="estudios_antibiogramas.html">Antibiogramas</a>
+                            <a href="estudios_antibiogramas.html">Antibiogramas</a>
                         </li>
                         <li>
                           <a href="estudios_antibioticos.html">Antibióticos</a>
@@ -201,209 +198,230 @@
         -->
         <!-- Page Content  -->
         <div id="content">
-            <div class="accordion" id="accordionExample" style="user-select:none;">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0 form-row" style="font-size: 20px;">
-                            Informacion Examen
-                            <div class="ml-auto">
-                                <button class="btn btn-link" type="button" aria-expanded="true" title="Buscar Orden">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                                <button class="btn btn-link" type="button" aria-expanded="true" title="">
-                                    <i class="fas fa-file"></i>
-                                </button>
-                            </div>
-                        </h2>
-                    </div>
+              <div class="accordion" id="accordionExample" style="user-select:none;">
+                  <div class="card">
+                      <div class="card-header" id="headingOne">
+                          <h2 class="mb-0 form-row" style="font-size: 20px;">
+                              Información Examen
+                              <div class="ml-auto">
+                                  <button class="btn btn-link" type="button" aria-expanded="true" title="Buscar Orden">
+                                      <i class="fas fa-search"></i>
+                                  </button>
+                                  <button class="btn btn-link" type="button" aria-expanded="true" title="">
+                                      <i class="fas fa-file"></i>
+                                  </button>
+                              </div>
+                          </h2>
+                      </div>
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            <!--Inicia código de formulario-->
-                            <form>
-                                <div class="form-row mb-0">
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">*Id Examen</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">*Nombre del Examen</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                          data-parent="#accordionExample">
+                          <div class="card-body">
+                              <!--Inicia código de formulario-->
+                              <form>
+                                  <div class="form-row mb-0">
+                                      <div class="form-group col-md-3">
+                                          <label class="col-form-label-sm mb-0">*Id Examen</label>
+                                          <input type="text" class="form-control form-control-sm">
+                                      </div>
+                                      <div class="form-group col-md-3">
+                                          <label class="col-form-label-sm mb-0">*Nombre del Examen</label>
+                                          <input type="text" class="form-control form-control-sm">
+                                      </div>
 
-                                    <div class="form-group col-md-3">
-                                      <br>
-                                      <a class="btn btn-success btn-sm" href="">Convertir en Cálculo</a>
-                                        </select>
-                                    </div>
+                                      <div class="form-group col-md-3">
+                                        <br>
+                                        <a class="btn btn-success btn-sm" href="">Convertir en Cálculo</a>
+                                          </select>
+                                      </div>
 
-                                </div>
-                                <div class="input-group">
-                                    <div class="form-group col-md-4">
-                                        <label for="inputRFC" class="col-form-label-sm mb-0">Visualiar de forma Individual</label>
-                                        <input type="checkbox" class="form-control form-control-sm" id="inputRFC">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">Nombre a visualizar en reporte</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Precio Inicial</label>
-                                        <input type="number" class="form-control form-control-sm" id="inputRFC">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Tipo de muestra</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Plasma</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Resultado</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Cuantitativo</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Esquema de Alertas</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                          <option>│...│*Normal*│....│Buen Control│</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Valores de referencia a imprimir</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Todos por condicion clinica</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Tipo de envace</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Tubo Tapon Rojo</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Unidades de medida</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>%</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Decimales de Reporte</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>2</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Técnica de Empleada</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Afinidad de Boronato</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label for="inputTel" class="col-form-label-sm mb-0">Tiempo de entrega</label>
-                                        <input type="number" class="form-control form-control-sm" id="inputTel">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputCel" class="col-form-label-sm mb-0">Descripción del Examen</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputCel">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Area Encargada</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Química Clínica</option>
-                                            <option></option>
-                                        </select>
-                                    </div>
-                                </div>
+                                  </div>
+                                  <div class="input-group">
+                                      <div class="form-group col-md-4">
+                                          <label for="inputRFC" class="col-form-label-sm mb-0">Visualiar de forma Individual</label>
+                                          <input type="checkbox" class="form-control form-control-sm" id="inputRFC">
+                                      </div>
+                                      <div class="form-group col-md-3">
+                                          <label class="col-form-label-sm mb-0">Nombre a visualizar en reporte</label>
+                                          <input type="text" class="form-control form-control-sm">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Precio Inicial</label>
+                                          <input type="number" class="form-control form-control-sm" id="inputRFC">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Tipo de muestra</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Plasma</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Resultado</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Cuantitativo</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Esquema de Alertas</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                            <option>│...│*Normal*│....│Buen Control│</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Valores de referencia a imprimir</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Todos por condicion clinica</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Tipo de envace</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Tubo Tapon Rojo</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Unidades de medida</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>%</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Decimales de Reporte</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>2</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Técnica de Empleada</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Afinidad de Boronato</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                  </div>
                                   <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
-                                    <textarea name="comentarios" rows="10" cols="40"></textarea>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
-                                    <textarea name="comentarios" rows="10" cols="40"></textarea>
-                                    <td>
-                                      <a class="btn btn-warning btn-sm" href="">Agregar Rango</a>
-                                    </td>
-                                </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputTel" class="col-form-label-sm mb-0">Tiempo de entrega</label>
+                                          <input type="number" class="form-control form-control-sm" id="inputTel">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputCel" class="col-form-label-sm mb-0">Descripción del Examen</label>
+                                          <input type="text" class="form-control form-control-sm" id="inputCel">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Area Encargada</label>
+                                          <select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Química Clínica</option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                    <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
+                                      <textarea name="comentarios" rows="10" cols="40"></textarea>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
+                                      <textarea name="comentarios" rows="10" cols="40"></textarea>
+                                      <td>
+                                        <a class="btn btn-warning btn-sm" href="">Agregar Rango</a>
+                                      </td>
+                                  </div>
 
-                                </div>
-                            </form>
-                            <!--Termina código de formulario-->
-                            <div class="col-sm-12">
-                                <table class="table table-sm table-hover">
-                                    <thead>
-                                        <tr class="table-primary">
-                                            <th>Sexo</th>
-                                            <th>Referencia</th>
-                                            <th>Edad Inf.</th>
-                                            <th>Edad Sup</th>
-                                            <th>P1</th>
-                                            <th>P2</th>
-                                            <th>P3</th>
-                                            <th>P4</th>
-                                            <th>P5</th>
-                                            <th>P6</th>
-                                            <th>P7</th>
-                                            <th>Cualitativos</th>
-                                            <th>Variantes</th>
-                                            <th></th>
+                                  </div>
+                              </form>
+                              <!--Termina código de formulario-->
+                              <div class="col-sm-12">
+                                  <table class="table table-sm table-hover">
+                                      <thead>
+                                          <tr class="table-primary">
+                                              <th>Sexo</th>
+                                              <th>Referencia</th>
+                                              <th>Edad Inf.</th>
+                                              <th>Edad Sup</th>
+                                              <th>P1</th>
+                                              <th>P2</th>
+                                              <th>P3</th>
+                                              <th>P4</th>
+                                              <th>P5</th>
+                                              <th>P6</th>
+                                              <th>P7</th>
+                                              <th>Cualitativos</th>
+                                              <th>Variantes</th>
+                                              <th></th>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Mixto</optio>
-                                            <option></option>
-                                            </select></td>
-                                            <td><select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Meses</optio>
-                                            <option></option>
-                                            </select></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td><select id="inputSexo" class="form-control form-control-sm">
-                                            <option>Mixto</optio>
-                                            <option></option>
-                                            </select></td>
-                                            <td></td>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td><select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Mixto</optio>
+                                              <option></option>
+                                              </select></td>
+                                              <td><select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Meses</optio>
+                                              <option></option>
+                                              </select></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>
+                                              <td><select id="inputSexo" class="form-control form-control-sm">
+                                              <option>Mixto</optio>
+                                              <option></option>
+                                              </select></td>
+                                              <td></td>
 
-                                            <td>
-                                                <a class="btn btn-danger btn-sm" href="eliminar_estudios.html"><img
-                                                        src="https://img.icons8.com/officel/20/000000/delete-row.png">
-                                                    Borrar</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                                              <td>
+                                                  <a class="btn btn-danger btn-sm" href="eliminar_estudios.html"><img
+                                                          src="https://img.icons8.com/officel/20/000000/delete-row.png">
+                                                      Borrar</a>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
     </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

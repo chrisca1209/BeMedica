@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="/img/favicon.ico">
+
     <title>Bemédica Punto de venta</title>
 
     <!-- Bootstrap CSS CDN -->
@@ -94,7 +94,7 @@
                             <a href="estudios_cultivos.html">Cultivos</a>
                         </li>
                         <li>
-                          <a href="estudios_antibiogramas.html">Antibiogramas</a>
+                            <a href="estudios_antibiogramas.html">Antibiogramas</a>
                         </li>
                         <li>
                           <a href="estudios_antibioticos.html">Antibióticos</a>
@@ -198,85 +198,102 @@
         -->
         <!-- Page Content  -->
         <div id="content">
-            <div class="accordion" id="accordionExample" style="user-select:none;">
+            <div class="accordion" id="accordionExample">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0 form-row" style="font-size: 20px;">
-                            Informacion Cultivo
-                            <div class="ml-auto">
-
-                                <button class="btn btn-link" type="button" aria-expanded="true" title="">
-                                    <i class="fas fa-file"></i>
-                                </button>
-                            </div>
-                        </h2>
-                    </div>
+                  <div class="card-header" id="headingOne">
+                      <h2 class="mb-0 form-row" style="font-size: 20px;">
+                          Información Cultivo
+                          <div class="ml-auto">
+                            <button class="btn btn-link" type="button" aria-expanded="true" title="Guardar">
+                                <i class="fas fa-save"></i>
+                            </button>
+                          </div>
+                      </h2>
+                  </div>
 
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
                         <div class="card-body">
                             <!--Inicia código de formulario-->
                             <form>
-                                <div class="form-row mb-0">
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">*Id Cultivo</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">*Nombre</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">*Precio Inicial</label>
-                                        <input type="number" class="form-control form-control-sm">
-                                    </div>
-                                    </div>
-
-                                <div class="input-group">
                                   <div class="form-row mb-0">
-                                    <div class="form-group col-md-4">
-                                        <label for="inputRFC" class="col-form-label-sm mb-0">Descripción</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputRFC">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Tiempo Entrega</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputRFC">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Tipo de Envace</label>
-                                        <select tyoe="inputSexo" class="form-control form-control-sm">
-                                          <option></option>
+                                      <div class="form-group col-md-3">
+                                          <label class="col-form-label-sm mb-0">*Id Cultivo</label>
+                                          <input type="text" class="form-control form-control-sm">
+                                      </div>
+                                      <div class="form-group col-md-3">
+                                          <label class="col-form-label-sm mb-0">*Nombre</label>
+                                          <input type="text" class="form-control form-control-sm">
+                                      </div>
+                                      <div class="form-group col-md-3">
+                                          <label class="col-form-label-sm mb-0">*Precio Inicial</label>
+                                          <input type="number" class="form-control form-control-sm">
+                                      </div>
+                                      </div>
+
+                                  <div class="input-group">
+                                    <div class="form-row mb-0">
+                                      <div class="form-group col-md-4">
+                                          <label for="inputRFC" class="col-form-label-sm mb-0">Descripción</label>
+                                          <input type="text" class="form-control form-control-sm" id="inputRFC">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Tiempo Entrega</label>
+                                          <input type="text" class="form-control form-control-sm" id="inputRFC">
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Tipo de Envace</label>
+                                          <select tyoe="inputSexo" class="form-control form-control-sm">
                                             <option></option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="inputSexo" class="col-form-label-sm mb-0">Area</label>
-                                        <select tyoe="inputSexo" class="form-control form-control-sm">
-                                          <option></option>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                                      <div class="form-group col-md-4">
+                                          <label for="inputSexo" class="col-form-label-sm mb-0">Area</label>
+                                          <select tyoe="inputSexo" class="form-control form-control-sm">
                                             <option></option>
-                                        </select>
-                                    </div>
-                            </form>
+                                              <option></option>
+                                          </select>
+                                      </div>
+                              </form>
+                              <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
+                            <textarea name="comentarios" rows="10" cols="40"></textarea>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
+                            <textarea name="comentarios" rows="10" cols="40"></textarea>
+
+                        </div>
+
+                        </div>
                             <!--Termina código de formulario-->
-                            <div class="form-row">
-                          <div class="form-group col-md-4">
-                              <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
-                              <textarea name="comentarios" rows="10" cols="40"></textarea>
-                          </div>
-                          <div class="form-group col-md-4">
-                              <label for="inputCel" class="col-form-label-sm mb-0">Indicaciones para el paciente</label>
-                              <textarea name="comentarios" rows="10" cols="40"></textarea>
-
-                          </div>
-
-                          </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </div>
     </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
