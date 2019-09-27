@@ -21,6 +21,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
+     <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
 </head>
 
@@ -227,9 +228,6 @@
                         <h2 class="mb-0 form-row" style="font-size: 20px;">
                             Buscar Facturas
                             <div class="ml-auto">
-                                <button class="btn btn-link" type="button" aria-expanded="true" title="Buscar Orden">
-                                    <i class="fas fa-search"></i>
-                                </button>
                                 <button class="btn btn-link" type="button" aria-expanded="true" title="">
                                     <i class="fas fa-file"></i>
                                 </button>
@@ -242,43 +240,79 @@
                         <div class="card-body">
                             <!--Inicia código de formulario-->
                             <form>
-                                <div class="form-row mb-0">
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">Folio de la Factura</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">Buscar Desde</label>
-                                        <input type="date" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">Buscar Hasta</label>
-                                        <input type="date" class="form-control form-control-sm">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">Folio de la Orden</label>
-                                        <input type="text" class="form-control form-control-sm">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label for="inputCol" class="col-form-label-sm mb-0">RFC de la Empresa</label>
-                                        <input type="text" class="form-control form-control-sm" id="inputCol">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">RFC Emisor</label>
-                                        <select id="inputSexo" class="form-control form-control-sm">
-                                            <option></option>
-                                            <option>...</option>
-                                            <option>...</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="dropdown-divider"></div>
+                                <!--<div class="dropdown-divider"></div>-->
                                 <h2 class="mb-0 form-row" style="font-size: 20px; background-color: #BCBCBC">Facturas
                                     Encontradas</h2>
                                 <div class="col-sm-12">
-                                    <table class="table table-sm table-bordered table-striped table-hover">
+                                  <div class="card mb-3">
+
+                                    <div class="card-header">
+                                      <div class="card-body">
+                                        <div class="table-responsive">
+                                          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                            <thead>
+                                              <tr class="table-primary">
+                                                <th></th>
+                                                <th>Folio</th>
+                                                <th>Fecha</th>
+                                                <th>RFC Emisor</th>
+                                                <th>RFC</th>
+                                                <th>Razón Social</th>
+                                                <th>Monto</th>
+                                                <th>Facturó</th>
+                                                <th>Status</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                              </tr>
+                                            </tbody>
+
+                                          </table>
+
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                        <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                          <div class="modal-dialog modal-sm-1" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            </div>
+                                              <div class="modal-body">
+                                                <label>Nombre de Técnica de Estudio</label>
+                                                <input type="text" name="" id="tecnica" class="form-control input-sm">
+
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
+                                                  Agregar
+                                                </button>
+
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <br><br>
+                                        <div align="right">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
+                                          Agregar nuevo
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                        </button>
+                                      </div>
+                                      </div>
+                                    <!--<table class="table table-sm table-bordered table-striped table-hover">
                                         <thead>
                                             <tr class="table-primary">
                                                 <th></th>
@@ -305,7 +339,7 @@
                                                 <td></td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    </table>-->
                                 </div>
                                 <div class="dropdown-divider"></div>
                                 <h2 class="mb-0 form-row" style="font-size: 20px; background-color: #BCBCBC">Facturación
@@ -436,6 +470,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+        <!-- Demo scripts for this page-->
+        <script src="js/demo/datatables-demo.js"></script>
+
+        <!-- Page level plugin JavaScript-->
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
