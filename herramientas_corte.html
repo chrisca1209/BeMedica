@@ -21,6 +21,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
+        <!-- Page level plugin CSS-->
+        <!-- Page level plugin JavaScript-->
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
 </head>
 
@@ -227,8 +232,6 @@
                         <h2 class="mb-0 form-row" style="font-size: 20px;">
                             Cortes de Caja
                             <div class="ml-auto">
-                                <button class="btn btn-link" type="button" aria-expanded="true" title="Buscar Orden">
-                                    <i class="fas fa-search"></i>
                                 </button>
                                 <button class="btn btn-link" type="button" aria-expanded="true" title="">
                                     <i class="fas fa-file"></i>
@@ -236,12 +239,15 @@
                             </div>
                         </h2>
                     </div>
+                    <br>
+                    <div class="col-sm-12">
+                      <div class="card mb-3">
 
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
+                        <div class="card-header">
+                          <div class="card-body">
+                            <div class="table-responsive">
                             <!--Inicia código de formulario-->
-                            <form>
+                            <!--<form>
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
                                         <label for="inputTel" class="col-form-label-sm mb-0">ID Médico</label>
@@ -259,41 +265,44 @@
                                         </select>
                                     </div>
 								</div>
-                            </form>
+              </form>-->
                             <!--Termina código de formulario-->
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0" style="font-size: 20px;">
+                                <h2 align="center" style="font-size: 20px;">
                                     Registros de Corte de Caja
                                 </h2>
-                            </div>
-                            <div class="col-sm-12">
-                                <table class="table table-sm table-bordered table-striped table-hover">
-                                    <thead>
-                                        <tr class="table-primary">
-                                            <th></th>
-                                            <th>ID Medico</th>
-                                            <th>Sucursal</th>
-                                            <th>Desde</th>
-                                            <th>Hasta</th>
-                                            <th>Monto</th>
-											<th>Realizo</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a class="btn btn-outline-primary btn-sm" title="Imprimir Orden"
-                                                   href=""><i class="fas fa-print"></i></a></td>
-                                            <td>101</td>
-                                            <td>Matriz</td>
-                                            <td>25/09/2019</td>
-                                            <td>25/09/2019</td>
-                                            <td>0.00</td>
-											<td>MASTER</td>
-                                        </tr>
-                                    </tbody>
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                              <thead>
+                                <tr class="table-primary">
+                                  <th></th>
+                                  <th>Id</th>
+                                  <th>Sucursal</th>
+                                  <th>Desde</th>
+                                  <th>Hasta</th>
+                                  <th>Monto</th>
+                                  <th>Realizó</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Imprimir</td>
+                                  <td>1</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                    </tr>
+                                  </tbody>
+
                                 </table>
+                                </div>
+                              </div>
                             </div>
+                          </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
                     </div>
                 </div>
             </div>
@@ -312,6 +321,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+        <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+
+        <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
