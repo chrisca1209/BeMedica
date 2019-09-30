@@ -199,13 +199,13 @@
                             <a href="herramientas_corte.html">Registro Demos</a>
                         </li>
                         <li>
-                            <a href="ayuda_acerca_de.html">Acerca de</a>
+                            <a href="herramientas_notificaciones.html">Acerca de</a>
                         </li>
                         <li>
-                            <a href="ayuda_contacto.html">Contacto</a>
+                            <a href="herramientas_reportes.html">Contacto</a>
                         </li>
                         <li>
-                            <a href="ayuda_registros.html">Registros</a>
+                            <a href="herramientas_sistema.html">Registros</a>
                         </li>
                     </ul>
                 </li>
@@ -226,7 +226,7 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0 form-row" style="font-size: 20px;">
-                            Notificaciones
+                            Generación de Reportes y Estadísticas
                         </h2>
                     </div>
 
@@ -235,28 +235,90 @@
                         <div class="card-body">
                             <!--Inicia código de formulario-->
                             <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label class="col-form-label-sm mb-0">Usuario Destino</label>
-                                        <select id="inputStatusMed" class="form-control form-control-sm">
-                                            <option> </option>
-                                            <option></option>
-                                        </select>
+                              <div class="form-row">
+                                <div class="form-group col-md-3">
+                                    <label for="inputreport" class="col-form-label-sm mb-0">Tipo de reporte</label>
+                                    <select id="inputreport" class="form-control form-control-sm">
+                                        <option>Ingresos y cobranza</option>
+                                        <option> </option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputreport" class="col-form-label-sm mb-0">Periodo</label>
+                                    <select id="inputreport" class="form-control form-control-sm">
+                                        <option> </option>
+                                        <option> </option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputFecha_ini" class="col-form-label-sm mb-0">Fecha Inicial</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputFecha_nac">
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <label for="inputFecha_fin" class="col-form-label-sm mb-0">Fecha Final</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputFecha_nac">
+                                </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-md-3">
+                                      <label for="inputTel" class="col-form-label-sm mb-0">Id Estudio</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputTel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Estudio</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputCel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                        <label for="inputRFC" class="col-form-label-sm mb-0">Incluir registros vacios en tabla</label>
+                                        <input type="checkbox" class="form-control form-control-sm" id="inputRFC">
                                     </div>
-                                    <div class="form-group" style="width: 59.5%; margin-left: 71px;">
-                                        <label for="exampleFormControlTextarea1">Mensaje</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                            rows="3"></textarea>
+                                    <div class="form-group col-md-3">
+                                          <label for="inputRFC" class="col-form-label-sm mb-0">Incluir registros vacios en tabla</label>
+                                          <input type="checkbox" class="form-control form-control-sm" id="inputRFC">
                                     </div>
-								</div>
-							   <button type="button" class="btn btn-primary btn-sm col-sm-12">Enviar</button>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-md-3">
+                                      <label for="inputTel" class="col-form-label-sm mb-0">Id Paciente</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputTel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Paciente</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputCel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Id Médico</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputCel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Médico</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputCel">
+                                  </div>
+                              </div>
+                              <div class="form-row">
+                                  <div class="form-group col-md-3">
+                                      <label for="inputTel" class="col-form-label-sm mb-0">RFC Cliente</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputTel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputCel" class="col-form-label-sm mb-0">Razón Social</label>
+                                      <input type="text" class="form-control form-control-sm" id="inputCel">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                      <label for="inputCel" class="col-form-label-sm mb-0"></label>
+                                      <br>
+                                    <button type="button" class="btn btn-primary btn-sm col-sm-12">Enviar</button>
+                                  </div>
+
+                              </div>
+
                             </form>
                             <!--Termina código de formulario-->
                         </div>
                     </div>
                     <div class="card-header" id="headingOne">
                         <h2 class="mb-0 form-row" style="font-size: 20px;">
-                            Buscar Registros
+                            Reportes
                             <div class="ml-auto">
                                 </button>
                                 <button class="btn btn-link" type="button" aria-expanded="true" title="">
@@ -279,11 +341,11 @@
                                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                           <thead>
                                             <tr class="table-primary">
-                                              <th>Remitente</th>
-                                              <th>Destinatario</th>
                                               <th>Fecha</th>
-                                              <th>Status</th>
-                                              <th>Mensaje</th>
+                                              <th>Monto</th>
+                                              <th>Anticipos</th>
+                                              <th>Adeudos</th>
+                                              <th></th>
                                             </tr>
                                           </thead>
                                           <tbody>
@@ -297,17 +359,34 @@
                                               </tbody>
 
                                             </table>
+                                              <!--Termina código de tabla-->
 
                                           </div>
 
                                       </div>
 
-                                    
+
                                     </div>
+                                    <!-- Bar Chart -->
+              <br>
+              <div align="center">
+              <div class="col-xl-9 col-lg-7" >
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Reporte de caja</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+
                                     <!--Termina código de formulario-->
                                   </div>
 
-                            <!--Termina código de tabla-->
 
 
                         </div>
@@ -336,6 +415,15 @@
         <!-- Page level plugin JavaScript-->
         <script src="vendor/datatables/jquery.dataTables.js"></script>
         <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+        <!-- Page level plugins -->
+ <script src="vendor/chart.js/Chart.min.js"></script>
+
+ <!-- Page level custom scripts -->
+ <script src="js/demo/chart-area-demo.js"></script>
+ <script src="js/demo/chart-pie-demo.js"></script>
+ <script src="js/demo/chart-bar-demo.js"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function () {

@@ -21,6 +21,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
 
 </head>
 
@@ -223,7 +225,79 @@
         <div id="content">
             <div class="accordion" id="accordionExample" style="user-select:none;">
                 <div class="card">
-                    <div class="card-header" id="headingOne">
+                  <div class="card-header" id="headingOne">
+                      <h2 class="mb-0 form-row" style="font-size: 20px;">
+                          Buscar Orden
+                      </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    <!--Inicia código de formulario-->
+
+                    <div class="col-sm-12">
+                      <div class="card mb-3">
+
+                        <div class="card-header">
+                          <div class="card-body">
+                            <div class="table-responsive">
+                              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
+                                <br>
+                                <thead>
+                                  <!-- checkbox -->
+                                  <div class="form-check" align="center">
+                                      <label><input class="form-check-input" type="checkbox" id="blankCheckbox"
+                                          value="option1">Cotizaciones</label>&nbsp; &nbsp; &nbsp; &nbsp;
+                                      <label><input class="form-check-input" type="checkbox" id="blankCheckbox"
+                                          value="option1">Urgencias</label>
+                                  </div>
+                                    <!-- checkbox -->
+                                  <tr class="table-primary">
+                                    <th width="25%">&nbsp;</th>
+                                    <th>Folio</th>
+                                    <th>Nombre Paciente</th>
+                                    <th>Fecha</th>
+                                    <th>% Avance</th>
+                                    <th>Factura</th>
+                                    <th>Adeudo</th>
+                                    <th>Registró</th>
+                                    <th>Nombre Médico</th>
+                                    <th>Empresa</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                        <a class="btn btn-outline-primary btn-sm" title="Imprimir Orden"
+                                            href=""><i class="fas fa-print"></i></a>
+                                        <a class="btn btn-outline-success btn-sm" title="Confirmar Pedido"
+                                            href=""><i class="fas fa-check-square"></i></a>
+                                        <a class="btn btn-outline-warning btn-sm" title="Abrir Orden" href=""><i
+                                                class="fas fa-folder-open"></i></a>
+                                        <a class="btn btn-outline-danger btn-sm" title="Cancelar Orden"
+                                            href=""><i class="fas fa-trash-alt"></i></a>
+                                        <a class="btn btn-outline-success btn-sm" title="Reutilizar Orden"
+                                            href=""><i class="fas fa-recycle"></i></a>
+                                        <a class="btn btn-outline-info btn-sm" title="Estudio Solicitado:"
+                                            href=""><i class="fas fa-question"></i></a>
+                                        <a class="btn btn-outline-secondary btn-sm" title="Facturación"
+                                            href=""><i class="fas fa-file-alt"></i></a>
+                                    </td>
+                                    <td>16311111</td>
+                                    <td>Claudisa</td>
+                                    <td>2019-02-03</td>
+                                    <td>50</td>
+                                    <td> </td>
+                                    <td>$20</td>
+                                    <td>Demo</td>
+                                    <td> </td>
+                                    <td>H</td>
+                                      </tr>
+                                    </tbody>
+
+                                  </table>
+                  <!--  <div class="card-header" id="headingOne">
                         <h2 class="mb-0 form-row" style="font-size: 20px;">
                             Buscar Orden
                             <div class="ml-auto">
@@ -240,7 +314,7 @@
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
                         <div class="card-body">
-                            <!--Inicia código de formulario-->
+                            <!--Inicia código de formulario
                             <form>
                                 <div class="form-row mb-0">
                                     <div class="form-group col-md-3">
@@ -316,7 +390,7 @@
                                     </div>
                                 </div>
                             </form>
-                            <!--Termina código de formulario-->
+                            Termina código de formulario
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0" style="font-size: 20px;">
                                     Órdenes Encontradas
@@ -374,7 +448,7 @@
                                         </tr>
 
                                     </tbody>
-                                </table>
+                                </table>-->
                             </div>
                         </div>
                     </div>
@@ -395,6 +469,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+        <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+
+        <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
