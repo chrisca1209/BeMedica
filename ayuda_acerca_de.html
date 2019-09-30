@@ -22,9 +22,6 @@
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
 
-        <!-- Page level plugin CSS-->
- <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -97,7 +94,7 @@
                             <a href="estudios_cultivos.html">Cultivos</a>
                         </li>
                         <li>
-                          <a href="estudios_antibiogramas.html">Antibiogramas</a>
+                            <a href="estudios_antibiogramas.html">Antibiogramas</a>
                         </li>
                         <li>
                           <a href="estudios_antibioticos.html">Antibióticos</a>
@@ -186,32 +183,34 @@
                             <a href="herramientas_sistema.html">Sistema</a>
                         </li>
                     </ul>
-                    <li>
-                        <a href="#homeSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-question-circle"></i>
-                            Ayuda
-                        </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu8">
-                            <li>
-                                <a href="herramientas_participaciones.html">BeMedica Support</a>
-                            </li>
-                            <li>
-                                <a href="herramientas_corte.html">Registro Demos</a>
-                            </li>
-                            <li>
-                                <a href="ayuda_acerca_de.html">Acerca de</a>
-                            </li>
-                            <li>
-                                <a href="ayuda_contacto.html">Contacto</a>
-                            </li>
-                            <li>
-                                <a href="ayuda_registros.html">Registros</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                </li>
+                <li>
+                    <a href="#homeSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-question-circle"></i>
+                        Ayuda
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu8">
+                        <li>
+                            <a href="herramientas_participaciones.html">BeMedica Support</a>
+                        </li>
+                        <li>
+                            <a href="herramientas_corte.html">Registro Demos</a>
+                        </li>
+                        <li>
+                            <a href="ayuda_acerca_de.html">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="ayuda_contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="ayuda_registros.html">Registros</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-
+        </nav>
+            </ul>
 
 
         </nav>
@@ -230,83 +229,42 @@
                 <div class="card">
                   <div class="card-header" id="headingOne">
                       <h2 class="mb-0 form-row" style="font-size: 20px;">
-                          Técnicas Estudios
+                          Información
+
                       </h2>
                   </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                  data-parent="#accordionExample">
-                  <div class="card-body">
-                    <!--Inicia código de formulario-->
 
-                    <div class="col-sm-12">
-                      <div class="card mb-3">
+                  <!--Section: Contact v.2-->
+<section class="mb-4">
 
-                        <div class="card-header">
-                          <div class="card-body">
-                            <div class="table-responsive">
-                              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                  <tr class="table-primary">
-                                    <th>Nombre</th>
-                                    <th width="25%">&nbsp;</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Hematología</td>
-                                    <td>
-                                      <a class="btn btn-warning btn-sm" href=""><img
-                                        src="">
-                                        Editar</a>
-                                        <a class="btn btn-danger btn-sm" href=""><img
-                                          src="">
-                                          Borrar</a>
-                                        </td>
-                                      </tr>
-                                    </tbody>
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Acerca de... </h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5"></p>
 
-                                  </table>
+    <div class="row">
 
-                                </div>
-                              </div>
+        <!--Grid column-->
+      </div>
+      <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <img src="./img/logo.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <h2>Historia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit suscipit, repudiandae similique accusantium eius nulla quam laudantium sequi.</p>
+            <p>Debitis voluptates corporis saepe molestias tenetur ab quae, quo earum commodi, laborum dolore, fuga aliquid delectus cum ipsa?</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                            </div>
-                            <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                              <div class="modal-dialog modal-sm-1" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                  <div class="modal-body">
-                                    <label>Nombre de Técnica de Estudio</label>
-                                    <input type="text" name="" id="tecnica" class="form-control input-sm">
-
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
-                                      Agregar
-                                    </button>
-
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <br><br>
-                            <div align="right">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                              Agregar nuevo
-                              <span class="glyphicon glyphicon-plus"></span>
-                            </button>
-                          </div>
-                          </div>
-                          <!--Termina código de formulario-->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+</section>
+<!--Section: Contact v.2-->
                 </div>
-              </div>
+    </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -320,13 +278,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
-
-  <!-- Demo scripts for this page-->
-  <script src="js/demo/datatables-demo.js"></script>
-
-  <!-- Page level plugin JavaScript-->
-  <script src="vendor/datatables/jquery.dataTables.js"></script>
-  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {

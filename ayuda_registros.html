@@ -186,33 +186,34 @@
                             <a href="herramientas_sistema.html">Sistema</a>
                         </li>
                     </ul>
-                    <li>
-                        <a href="#homeSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                            <i class="fas fa-question-circle"></i>
-                            Ayuda
-                        </a>
-                        <ul class="collapse list-unstyled" id="homeSubmenu8">
-                            <li>
-                                <a href="herramientas_participaciones.html">BeMedica Support</a>
-                            </li>
-                            <li>
-                                <a href="herramientas_corte.html">Registro Demos</a>
-                            </li>
-                            <li>
-                                <a href="ayuda_acerca_de.html">Acerca de</a>
-                            </li>
-                            <li>
-                                <a href="ayuda_contacto.html">Contacto</a>
-                            </li>
-                            <li>
-                                <a href="ayuda_registros.html">Registros</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                </li>
+                <li>
+                    <a href="#homeSubmenu8" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-question-circle"></i>
+                        Ayuda
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu8">
+                        <li>
+                            <a href="herramientas_participaciones.html">BeMedica Support</a>
+                        </li>
+                        <li>
+                            <a href="herramientas_corte.html">Registro Demos</a>
+                        </li>
+                        <li>
+                            <a href="ayuda_acerca_de.html">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="ayuda_contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="ayuda_registros.html">Registros</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
 
-
-
+        </nav>
+            </ul>
 
         </nav>
         <!-- <script>
@@ -230,75 +231,70 @@
                 <div class="card">
                   <div class="card-header" id="headingOne">
                       <h2 class="mb-0 form-row" style="font-size: 20px;">
-                          Técnicas Estudios
+                          Buscar Registros
                       </h2>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                  data-parent="#accordionExample">
-                  <div class="card-body">
-                    <!--Inicia código de formulario-->
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                      <!--Inicia código de formulario-->
+                    <!--  <div class="form-row mb-0">
+                        <div class="form-group col-md-3">
+                          <label for="inputConvenio">Convenio</label>
+                          <select id="inputConvenio" class="form-control">
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputIDEstudio">ID Estudio</label>
+                          <input type="text" class="form-control" id="inputIDEestudio">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputEstudio">Estudio</label>
+                          <input type="text" class="form-control" id="inputEstudio">
+                        </div>
+                      </div>
 
+                      <div class="card-header" align="center">
+
+                          <h2 style="font-size: 20px;">
+                              Lista de Precios
+                          </h2>
+
+                        </div>-->
                     <div class="col-sm-12">
                       <div class="card mb-3">
-
                         <div class="card-header">
                           <div class="card-body">
+
                             <div class="table-responsive">
+
                               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                   <tr class="table-primary">
-                                    <th>Nombre</th>
-                                    <th width="25%">&nbsp;</th>
+                                    <th>Usuario</th>
+                                    <th>Fecha</th>
+                                    <th>Categoría</th>
+                                    <th>Registro</th>
+
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td>Hematología</td>
-                                    <td>
-                                      <a class="btn btn-warning btn-sm" href=""><img
-                                        src="">
-                                        Editar</a>
-                                        <a class="btn btn-danger btn-sm" href=""><img
-                                          src="">
-                                          Borrar</a>
-                                        </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
                                       </tr>
                                     </tbody>
-
                                   </table>
-
-                                </div>
-                              </div>
-
-                            </div>
-                            <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                              <div class="modal-dialog modal-sm-1" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                </div>
-                                  <div class="modal-body">
-                                    <label>Nombre de Técnica de Estudio</label>
-                                    <input type="text" name="" id="tecnica" class="form-control input-sm">
-
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
-                                      Agregar
-                                    </button>
-
-                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <br><br>
-                            <div align="right">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                              Agregar nuevo
-                              <span class="glyphicon glyphicon-plus"></span>
-                            </button>
-                          </div>
+
+
                           </div>
                           <!--Termina código de formulario-->
                         </div>
