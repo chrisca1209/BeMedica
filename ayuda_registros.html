@@ -215,7 +215,6 @@
         </nav>
             </ul>
 
-
         </nav>
         <!-- <script>
             function cambia(src) {
@@ -232,42 +231,53 @@
                 <div class="card">
                   <div class="card-header" id="headingOne">
                       <h2 class="mb-0 form-row" style="font-size: 20px;">
-                          Definición de Esquemas de Alertas por Valores de Referencia
+                          Buscar Registros
                       </h2>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                  data-parent="#accordionExample">
-                  <div class="card-body">
-                    <!--Inicia código de formulario-->
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                      <!--Inicia código de formulario-->
+                    <!--  <div class="form-row mb-0">
+                        <div class="form-group col-md-3">
+                          <label for="inputConvenio">Convenio</label>
+                          <select id="inputConvenio" class="form-control">
+                            <option>...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="inputIDEstudio">ID Estudio</label>
+                          <input type="text" class="form-control" id="inputIDEestudio">
+                        </div>
+                        <div class="form-group col-md-4">
+                          <label for="inputEstudio">Estudio</label>
+                          <input type="text" class="form-control" id="inputEstudio">
+                        </div>
+                      </div>
 
+                      <div class="card-header" align="center">
+
+                          <h2 style="font-size: 20px;">
+                              Lista de Precios
+                          </h2>
+
+                        </div>-->
                     <div class="col-sm-12">
                       <div class="card mb-3">
-
                         <div class="card-header">
                           <div class="card-body">
+
                             <div class="table-responsive">
+
                               <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                   <tr class="table-primary">
-                                    <th> </th>
-                                    <th> </th>
-                                    <th>Normal</th>
-                                    <th>R1</th>
-                                    <th>R2</th>
-                                    <th>R3</th>
-                                    <th>R4</th>
-                                    <th>R5</th>
-                                    <th>R6</th>
-                                    <th>R7</th>
-                                    <th>R8</th>
-                                    <th>Img1</th>
-                                    <th>Img2</th>
-                                    <th>Img3</th>
-                                    <th>Img4</th>
-                                    <th>Img5</th>
-                                    <th>Img6</th>
-                                    <th>Img7</th>
-                                    <th>Img8</th>
+                                    <th>Usuario</th>
+                                    <th>Fecha</th>
+                                    <th>Categoría</th>
+                                    <th>Registro</th>
+
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -276,136 +286,15 @@
                                     <td></td>
                                     <td></td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+
                                       </tr>
                                     </tbody>
-
                                   </table>
-
-                                </div>
-                              </div>
-
-                            </div>
-                            <div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                              <div class="modal-dialog modal-sm-1" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Insertar nuevo registro</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                  </div>
-                                  <!--body de Modal -->
-                                  <div class="modal-body">
-                                    <div class="form-row">
-                                        <div class="form-group col-md-3">
-                                            <label for="inputNor" class="col-form-label-sm mb-0">Normal</label>
-                                            <input type="text" class="form-control form-control-sm" id="inputNor">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input1" class="col-form-label-sm mb-0">Rango 1</label>
-                                            <input type="text" class="form-control form-control-sm" id="input1">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input2" class="col-form-label-sm mb-0">Rango 2</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu2">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input3" class="col-form-label-sm mb-0">Rango 3</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu3">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-3">
-                                            <label for="inputNor" class="col-form-label-sm mb-0">Rango 4</label>
-                                            <input type="text" class="form-control form-control-sm" id="inputNor">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input1" class="col-form-label-sm mb-0">Rango 5</label>
-                                            <input type="text" class="form-control form-control-sm" id="input1">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input2" class="col-form-label-sm mb-0">Rango 6</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu2">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input3" class="col-form-label-sm mb-0">Rango 7</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu3">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-3">
-                                            <label for="inputNor" class="col-form-label-sm mb-0">Rango 8</label>
-                                            <input type="text" class="form-control form-control-sm" id="inputNor">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input1" class="col-form-label-sm mb-0">Imagen 1</label>
-                                            <input type="text" class="form-control form-control-sm" id="input1">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input2" class="col-form-label-sm mb-0">Imagen 2</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu2">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input3" class="col-form-label-sm mb-0">Imagen 3</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu3">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-3">
-                                            <label for="inputNor" class="col-form-label-sm mb-0">Rango 4</label>
-                                            <input type="text" class="form-control form-control-sm" id="inputNor">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input1" class="col-form-label-sm mb-0">Imagen 5</label>
-                                            <input type="text" class="form-control form-control-sm" id="input1">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input2" class="col-form-label-sm mb-0">Imagen 6</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu2">
-                                        </div>
-                                        <div class="form-group col-md-3">
-                                            <label for="input3" class="col-form-label-sm mb-0">Imagen 7</label>
-                                            <input type="text" class="form-control form-control-sm" id="inpu3">
-                                        </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group col-md-3">
-                                            <label for="inputNor" class="col-form-label-sm mb-0">Imagen 8</label>
-                                            <input type="text" class="form-control form-control-sm" id="inputNor">
-                                        </div>
-                                    </div>
-
-
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
-                                      Agregar
-                                    </button>
-
-                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <br><br>
-                            <div align="right">
-                            <button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
-                              Agregar nuevo
-                              <span class="glyphicon glyphicon-plus"></span>
-                            </button>
-                          </div>
+
+
                           </div>
                           <!--Termina código de formulario-->
                         </div>

@@ -22,6 +22,8 @@
         integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
         crossorigin="anonymous"></script>
 
+                <!-- Page level plugin CSS-->
+         <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 </head>
 
 <body>
@@ -191,24 +193,23 @@
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu8">
                         <li>
-                            <a href="herramientas_participaciones.html">BeMedica Support</a>
+                            <a href="ayuda_support.html">BeMedica Support</a>
                         </li>
                         <li>
-                            <a href="herramientas_corte.html">Registro Demos</a>
+                            <a href="ayuda_demo.html">Registro Demos</a>
                         </li>
                         <li>
-                            <a href="herramientas_notificaciones.html">Acerca de</a>
+                            <a href="ayuda_acerca_de.html">Acerca de</a>
                         </li>
                         <li>
-                            <a href="herramientas_reportes.html">Contacto</a>
+                            <a href="ayuda_contacto.html">Contacto</a>
                         </li>
                         <li>
-                            <a href="herramientas_sistema.html">Registros</a>
+                            <a href="ayuda_registros.html">Registros</a>
                         </li>
                     </ul>
                 </li>
             </ul>
-
         </nav>
         <!-- <script>
             function cambia(src) {
@@ -236,14 +237,14 @@
                             <form>
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
-                                        <label class="col-form-label-sm mb-0">Estatus</label>
+                                        <label class="col-form-label-sm mb-0">Usuario Destino</label>
                                         <select id="inputStatusMed" class="form-control form-control-sm">
-                                            <option>En proceso</option>
-                                            <option>Terminado</option>
+                                            <option> </option>
+                                            <option></option>
                                         </select>
                                     </div>
                                     <div class="form-group" style="width: 59.5%; margin-left: 71px;">
-                                        <label for="exampleFormControlTextarea1">Información de la clínica</label>
+                                        <label for="exampleFormControlTextarea1">Mensaje</label>
                                         <textarea class="form-control" id="exampleFormControlTextarea1"
                                             rows="3"></textarea>
                                     </div>
@@ -257,8 +258,6 @@
                         <h2 class="mb-0 form-row" style="font-size: 20px;">
                             Buscar Registros
                             <div class="ml-auto">
-                                <button class="btn btn-link" type="button" aria-expanded="true" title="Buscar Orden">
-                                    <i class="fas fa-search"></i>
                                 </button>
                                 <button class="btn btn-link" type="button" aria-expanded="true" title="">
                                     <i class="fas fa-file"></i>
@@ -270,63 +269,47 @@
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                         data-parent="#accordionExample">
                         <div class="card-body">
-                            <!--Inicia código de formulario-->
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-md-3">
-                                        <label for="inputTel" class="col-form-label-sm mb-0">Categoria</label>
-                                        <select type="text" class="form-control form-control-sm" id="inputTel">
-                                            <option>En proceso</option>
-                                            <option>Terminado</option>
-										</select>
+                            <!--Inicia código de tabla-->
+
+                              <div class="col-sm-12">
+                                <div class="card mb-3">
+
+                                  <div class="card-header">
+                                      <div class="table-responsive">
+                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                          <thead>
+                                            <tr class="table-primary">
+                                              <th>Remitente</th>
+                                              <th>Destinatario</th>
+                                              <th>Fecha</th>
+                                              <th>Status</th>
+                                              <th>Mensaje</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td> </td>
+                                              <td> </td>
+                                              <td> </td>
+                                              <td> </td>
+                                              <td> </td>
+                                                </tr>
+                                              </tbody>
+
+                                            </table>
+
+                                          </div>
+
+                                      </div>
+
+
                                     </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputFecha_nac" class="col-form-label-sm mb-0">Fecha Inicial</label>
-                                        <input type="date" class="form-control form-control-sm" id="inputFecha_inicio">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label for="inputFecha_nac" class="col-form-label-sm mb-0">Fecha Final</label>
-                                        <input type="date" class="form-control form-control-sm" id="inputFecha_final">
-                                    </div>
-                                    <div class="form-group col-md-3">
-                                        <label class="col-form-label-sm mb-0">Estatus</label>
-                                        <select id="inputStatusMed" class="form-control form-control-sm">
-                                            <option>En proceso</option>
-                                            <option>Terminado</option>
-                                        </select>
-                                    </div>
-								</div>
-                            </form>
-                            <!--Termina código de formulario-->
-                            <div class="card-header" id="headingOne">
-                                <h2 class="mb-0" style="font-size: 20px;">
-                                    Registros de Corte de Caja
-                                </h2>
-                            </div>
-                            <div class="col-sm-12">
-                                <table class="table table-sm table-bordered table-striped table-hover">
-                                    <thead>
-                                        <tr class="table-primary">
-                                            <th></th>
-                                            <th>Remitente</th>
-                                            <th>Destinatario</th>
-                                            <th>Fecha</th>
-                                            <th>Estatus</th>
-                                            <th>Mensaje</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td></td>
-                                            <td>101</td>
-                                            <td>Matriz</td>
-                                            <td>25/09/2019</td>
-                                            <td>asdf</td>
-                                            <td>0.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                                    <!--Termina código de formulario-->
+                                  </div>
+
+                            <!--Termina código de tabla-->
+
+
                         </div>
                     </div>
                 </div>
@@ -347,6 +330,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+        <!-- Demo scripts for this page-->
+        <script src="js/demo/datatables-demo.js"></script>
+
+        <!-- Page level plugin JavaScript-->
+        <script src="vendor/datatables/jquery.dataTables.js"></script>
+        <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function () {
