@@ -1613,8 +1613,8 @@ if (typeof NProgress != 'undefined') {
 				fromLabel: 'From',
 				toLabel: 'To',
 				customRangeLabel: 'Custom',
-				daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-				monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+				daysOfWeek: ['Lun', 'Mart', 'Mier', 'Jue', 'Vi', 'Sab', 'Dom'],
+				monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
 				firstDay: 1
 			  }
 			};
@@ -1688,8 +1688,8 @@ if (typeof NProgress != 'undefined') {
 					fromLabel: 'From',
 					toLabel: 'To',
 					customRangeLabel: 'Custom',
-					daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-					monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+					daysOfWeek: ['Lun', 'Mart', 'Mier', 'Jue', 'Vi', 'Sab', 'Dom'],
+				monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
 					firstDay: 1
 				  }
 				};
