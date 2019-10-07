@@ -87,7 +87,7 @@
                     </ul>
                   </li>
                   </li>
-                
+
                   <li><a><i class="fa fa-clone"></i>Mi agenda médica <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="creacion_agenda.html">Crear Agenda</a></li>
@@ -246,27 +246,15 @@
               <div class="col-md-15 col-sm-15 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2><i class="fa fa-bars"></i> Citas </h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
+                    <h2><i class="fa fa-bars"></i>Agregar Citas</h2>
+                    
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
 
-
+                    <div class="col-12 col-md-5 mb-0">
+                      <a href="index1.html" class="btn btn-success"><i class="fa fa-plus m-right-xs"></i>Agregar Cita</a>
+                      <br />
 
                     </div>
                     <div class="medilife-book-an-appoinment-area">
@@ -333,99 +321,7 @@
    </div>
 
                   </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                       data-parent="#accordionExample">
-                       <div class="card-body">
-                           <!--Inicia código de formulario-->
-                           <form>
-                               <div class="form-row mb-0">
-                                   <div class="form-group col-md-3">
-                                       <label class="col-form-label-sm mb-0">Nombre</label>
-                                       <input type="text" class="form-control form-control-sm">
-                                   </div>
-                                   <div class="form-group col-md-3">
-                                       <label class="col-form-label-sm mb-0">Apellido Paterno</label>
-                                       <input type="text" class="form-control form-control-sm">
-                                   </div>
-                                   <div class="form-group col-md-4">
-                                       <label class="col-form-label-sm mb-0">Apellido Materno</label>
-                                       <input type="text" class="form-control form-control-sm">
-                                   </div>
 
-                               </div>
-                               <div class="form-row">
-                                   <div class="form-group col-md-4">
-                                       <label for="inputCel" class="col-form-label-sm mb-0">Celular</label>
-                                       <input type="text" class="form-control form-control-sm" id="inputCel">
-                                   </div>
-                                   <div class="form-group col-md-4">
-                                       <label for="inputDireccion" class="col-form-label-sm mb-0">Dirección</label>
-                                       <input type="text" class="form-control form-control-sm" id="inputDireccion">
-                                   </div>
-                               </div>
-                           </form>
-                           <!--Termina código de formulario-->
-                       </div>
-                       <div class="center">
-                       <div class="form-group" style="width: 59.5%; margin-left: 71px;">
-                         <h2>Motivo y/o Comentarios</h2>
-                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                            rows="3"></textarea>
-                    </div>
-                   </div>
-                   <button type="button" class="btn btn-success " data-toggle="modal" data-target=".bs-example-modal-lg">Editar</button>
-                   <button type="button" class="btn btn-success " data-toggle="">Guardar</button>
-
-                                               <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-                                                 <div class="modal-dialog modal-lg">
-                                                   <div class="modal-content">
-
-                                                     <div class="modal-header">
-                                                       <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
-                                                       </button>
-                                                       <h4 class="modal-title" id="myModalLabel">Editar Cita</h4>
-                                                     </div>
-                                                     <div class="modal-body">
-                                                       <label class="control-label col-md-2 col-sm-2 col-xs-5">Nombre:
-                                                       </label>
-                                                       <div class="col-md-3 col-sm-3 col-xs-12">
-                                                         <input class="date-picker form-control col-md-5 col-xs-12" required="required" type="text">
-                                                       </div>
-                                                       <label class="control-label col-md-2 col-sm-3 col-xs-12">Apellido Paterno:
-                                                       </label>
-                                                       <div class="col-md-3 col-sm-5 col-xs-12">
-
-                                                         <input class="date-picker form-control col-md-5 col-xs-12" required="required" type="text">
-                                                       </div>
-                                                       <br><br>
-                                                     </div>
-                                                     <div class="modal-body">
-                                                       <label class="control-label col-md-2 col-sm-3 col-xs-12">Apellido Materno:
-                                                       </label>
-                                                       <div class="col-md-3 col-sm-3 col-xs-12">
-                                                         <input class="date-picker form-control col-md-5 col-xs-12" required="required" type="text">
-                                                       </div>
-                                                       </div>
-                                                        <br><br>
-                                                       <div class="center">
-                                                       <div class="form-group" style="width: 59.5%; margin-left: 71px;">
-                                                         <div class="center">
-                                                         <h2>Motivo y/o Comentarios</h2>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                            rows="3"></textarea>
-                                                            <br>
-                                                            <a href="" class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Guardar</a>
-
-                                                        </div>
-
-                                                    </div>
-
-                                                   </div>
-                                                     </div>
-                                                   </div>
-
-                                                 </div>
-                                               </div>
 
 
               </div>
