@@ -20,18 +20,13 @@
     <link href="../build/css/custom.min.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+   <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
 
-
-
-    <!-- bootstrap-wysiwyg -->
-
-    <!-- Select2 -->
-
-    <!-- Switchery -->
-
-    <!-- starrr -->
-
-    <!-- bootstrap-daterangepicker -->
+    <!-- PNotify -->
+    <link href="../vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="../vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
 
   </head>
 
@@ -68,8 +63,6 @@
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="index.html">Dashboard</a></li>
-                      <li><a href="index2.html">Dashboard2</a></li>
-                      <li><a href="index3.html">Dashboard3</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Alta Pacientes <span class="fa fa-chevron-down"></span></a>
@@ -413,7 +406,19 @@
                                 <input class="date-picker form-control col-md-5 col-xs-12" required="required" type="text">
                               </div>
                             </div>
+                            <div class="row no-print">
+                              <div class="col-xs-12">
+                                <a class="btn btn-warning pull-right" href=""><img
+                                  src="">
+                                  Editar</a>
+                                <a class="btn btn-info pull-right" href=""><img
+                                  src="">
+                                  Guardar</a>
+                                <button class="btn btn-default pull-right" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
+                              </div>
+                            </div>
                           </form>
+
                         </div>
                       </div>
                   </div>
@@ -597,16 +602,26 @@
                                      </td>
                                     </tr>
                                   </tbody>
+
                                 </table>
+                                <div class="row no-print">
+                                  <div class="col-xs-12">
+                                    <a class="btn btn-warning pull-right" href=""><img
+                                      src="">
+                                      Editar</a>
+                                    <a class="btn btn-info pull-right" href=""><img
+                                      src="">
+                                      Guardar</a>
+                                    <button class="btn btn-default pull-right" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
+                                  </div>
+                                </div>
                               </div>
-
-
                             </div>
-
                           </div>
                         </div>
 
                       </div>
+
                       <!--Antecedentes no patologicos -------------------------------------------->
                       <div id="step-3">
                         <div class="form-group">
@@ -871,10 +886,22 @@
 
 
                               </form>
+                              <div class="row no-print">
+                                <div class="col-xs-12">
+                                  <a class="btn btn-warning pull-right" href=""><img
+                                    src="">
+                                    Editar</a>
+                                  <a class="btn btn-info pull-right" href=""><img
+                                    src="">
+                                    Guardar</a>
+                                  <button class="btn btn-default pull-right" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                       </div>
                       </div>
+
                       <!--  Embarazo -------------------------------------------------------------------------->
                       <div id="step-5">
                         <div class="form-group">
@@ -966,11 +993,34 @@
                               <!-- End terapeutica-------------------------------------------->
 
                               </form>
+
+                              <div class="row no-print">
+                                <div class="col-xs-12">
+                                  <button class="btn btn-danger pull-right" onclick="myFunction()">Generar laboratorio</button>
+                                  <script>
+                                  function myFunction() {
+                                    alert("Guarda la informacion antes de generar una orden de laboratorio");
+                                  }
+                                  </script>
+
+                                  <button class="btn btn-default pull-right" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
+
+                                  <a class="btn btn-warning pull-right" href=""><img
+                                    src="">
+                                    Editar</a>
+                                  <a class="btn btn-info pull-right" href=""><img
+                                    src="">
+                                    Guardar</a>
+                                    </div>
+                              </div>
                             </div>
                           </div>
                         </div>
 
                       </div>
+
+
+                      <!-- casa habitacion-->
                       <div id="step-4">
                         <div class="form-group">
                           <div class="x_panel">
@@ -1307,10 +1357,23 @@
                                 </div>
 
                               </form>
+                              <div class="row no-print">
+                                <div class="col-xs-12">
+                                  <button class="btn btn-default pull-right" onclick="window.print();"><i class="fa fa-print"></i> Imprimir</button>
+                                  <a class="btn btn-warning pull-right" href=""><img
+                                    src="">
+                                    Editar</a>
+                                  <a class="btn btn-info pull-right" href=""><img
+                                    src="">
+                                    Guardar</a>
+
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
+                      <!-- end casa habitacion-->
                     </div>
                     <!-- End SmartWizard Content -->
                   </div>
@@ -1324,6 +1387,13 @@
         <!-- footer content -->
 
       </div>
+    </div>
+
+    <div id="custom_notifications" class="custom-notifications dsp_none">
+      <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group">
+      </ul>
+      <div class="clearfix"></div>
+      <div id="notif-group" class="tabbed_notifications"></div>
     </div>
 
     <!-- jQuery -->
@@ -1340,6 +1410,12 @@
     <script src="../build/js/custom.min.js"></script>
     <!-- iCheck -->
     <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- PNotify -->
+  <script src="../vendors/pnotify/dist/pnotify.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="../vendors/pnotify/dist/pnotify.nonblock.js"></script>
+  <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
 
 
   </body>
